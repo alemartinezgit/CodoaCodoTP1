@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TP1 Oficial</title>
+    <link rel="stylesheet" href="./custom.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js" integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js" integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-xl">
+        <div class="container-fluid">
+            <div class="mi-logo">
+                <div class="mi-icono-inicio">
+                <a href="#inicio"><img src="./images/codoacodo.png" alt="Loco CaC"></a>
+                <a href="#inicio"><h2>Conf Bs As</h2></a>
+            </div>
+            <div class="mi-hamburguesa">
+                <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo2" aria-controls="navbarTogglerDemo2" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+            </div>
+            <div class="navbar-collapse collapse mi-nav-bar" id="navbarTogglerDemo2">
+                <a class="nav-link active" aria-current="page" href="#inicio">La conferencia</a> 
+                <a class="nav-link" href="#lugar">El lugar y la fecha</a>
+                <a class="nav-link active" aria-current="page" href="#ser-orador">Conviértete en orador</a>
+                <a class="nav-link" href="#oradores">Los oradores</a>
+                <a class="nav-link active" aria-current="page" href="#" id="tickets">Comprar tickets</a>                   
+            </div>
+        </div>
+    </nav>      
+
+
+    <div class="mi-container" id="inicio">
+        <div class="texto-bs-as">
+            <h1>Conf Bs As</h1>
+            <p>Bs As llega por primera vez a Argentina. Un evento para compartir con nuestra comunidad el conocimiento y
+                experiencia de los expertos que estan creando el futuro de Internet. Ven a conocer a miembos del evento,
+                a otros estudiantes de Codo a Codo y los oradores de primer nivel que tenemos para ti. Te esperamos!</p>
+            <div class="mis-botones">
+                <button type="button" class="boton" id="boton-1">Quiero ser orador</button>
+                <button type="button" class="boton" id="boton-2">Comprar tickets</button>
+            </div>
+        </div>
+    </div>
+
+    <section class="mi-container-2" id="oradores">
+        <div class="texto-oradores">
+            <p>conoce a los</p>
+            <h3>ORADORES</h3>
+        </div>
+        <div class="container text-center">
+            <div class="row align-items-start">
+                <div class="col">
+                    <img src="./images/steve.jpg" alt="Imagen Steve">
+                    <div class="texto-oradores-2">
+                        <span class="js">JavaScript</span> <span class="react">React</span>
+                        <h3>Steve Jobs</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem ad reiciendis, ipsa quisquam
+                            animi necessitatibus. Corrupti, repellendus possimus magnam consequatur voluptas sint fuga
+                            quos, ex voluptatibus sequi recusandae. Expedita, quos.</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <img src="./images/bill.jpg" alt="Imagen Bill Gates">
+                    <div class="texto-oradores-2">
+                        <span class="js">JavaScript</span> <span class="react">React</span>
+                        <h3>Bill Gates</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem ad reiciendis, ipsa quisquam
+                            animi necessitatibus. Corrupti, repellendus possimus magnam consequatur voluptas sint fuga
+                            quos, ex voluptatibus sequi recusandae. Expedita, quos.</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <img src="./images/ada.jpeg" alt="Imagen Ada">
+                    <div class="texto-oradores-2">
+                        <span class="negocios">Negocios</span> <span class="startups">Startups</span>
+                        <h3>Ada Lovelace</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem ad reiciendis, ipsa quisquam
+                            animi necessitatibus. Corrupti, repellendus possimus magnam consequatur voluptas sint fuga
+                            quos, ex voluptatibus sequi recusandae. Expedita, quos.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="parte-3" id="lugar">
+        <img src="./images/honolulu.jpg" alt="" class="imagen-playa">
+        <div class="mitad-pantalla-gris">
+            <h2>Bs As - Octubre</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid magnam quia optio reprehenderit
+                reiciendis provident rem consectetur similique dolores quasi sint temporibus alias voluptatum eaque ea
+                at assumenda, ipsa autem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid magnam quia
+                optio reprehenderit reiciendis provident rem consectetur similique dolores quasi sint temporibus alias
+                voluptatum eaque ea at assumenda, ipsa autem. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Aliquid magnam quia optio reprehenderit reiciendis provident rem consectetur similique dolores quasi
+                sint temporibus alias voluptatum eaque ea at assumenda, ipsa autem</p>
+            <button type="button" class="boton" id="boton-1">Conocé más</button>
+        </div>
+    </section>
+
+    <div  id="ser-orador" class="container text-center">
+        <div class="row justify-content-center">
+            <div class="col-8">
+                <div class="texto-formulario">
+                    <p class="mi-p">conoce a los</p>
+                    <h3>ORADORES</h3>
+                    <p> Anótate como orador para dar una <span class="subrayado">charla ignite</span>. Cuéntanos de qué
+                        quieres hablar! </p>
+                </div>
+                <div class="formulario">
+                    <div class="form-nombre-apellido">
+                        <label for="exampleFormControlInput1" class="form-label"></label>
+                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Nombre"
+                            class="input-1">
+
+                        <label for="exampleFormControlInput1" class="form-label"></label>
+                        <input type="text" class="form-control" id="exampleFormControlInput2" placeholder="Apellido">
+
+                    </div>
+                    <label for="exampleFormControlTextarea1" class="form-label"></label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+                        placeholder="Sobre qué quieres hablar?"></textarea>
+                    <span class="mi-h6">
+                        <h6>Recuerda incluir un titulo para tu charla</h6>
+                    </span>
+                    <div class="d-grid gap-2">
+                        <button class="btn btn-primary" type="button">Enviar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="mi-nav-foot">
+            <a href="#" class="mi-footer-link">Preguntas frecuentes</a>
+            <a href="#" class="mi-footer-link">Contactanos</a>
+            <a href="#" class="mi-footer-link">Prensa</a>
+            <a href="#" class="mi-footer-link">Conferencias</a>
+            <a href="#" class="mi-footer-link">Terminos y condiciones</a>
+            <a href="#" class="mi-footer-link">Privacidad</a>
+            <a href="#" class="mi-footer-link">Estudiantes</a>
+        </div>
+    </footer>
+
+</body>
+</html>
