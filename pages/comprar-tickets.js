@@ -16,7 +16,7 @@ function calcular() {
                 icon: 'error',
                 title: 'Oops...',
                 text: cant +' no es una cantidad valida de tickets!!!',
-              })
+              });
         } else {
             precioTotal = cant * precioTicket;
             switch(categoria) {
