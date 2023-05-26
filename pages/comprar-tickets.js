@@ -12,7 +12,11 @@ function calcular() {
 
     if(validoCampos()){
         if (cant < 1 || isNaN(cant)) {
-            alert("Porfavor ingrese una cantidad de ticket valida");
+            Swal.fire({
+                icon: 'error',
+                title: 'Oops...',
+                text: cant +' no es una cantidad valida de tickets!!!',
+              })
         } else {
             precioTotal = cant * precioTicket;
             switch(categoria) {
@@ -27,9 +31,22 @@ function calcular() {
                     break;
             }
             document.getElementById("total").value = cadena + precioDescuento ;
+            Swal.fire({
+                icon: 'success',
+                title: '¡Éxito!',
+                text: 'Se realizo con exito la compra de entradas: '+cant + ' con Importe: $' + precioDescuento ,
+              });
         }
     }  
+    else {
+        Swal.fire({
+            icon: 'error',
+            title: 'Oops...',
+            text: 'VALIDE CAMPOS!',
+          })
+    }
     document.getElementById("cantidad").value = "";
+    
 }
 
 function validoCampos() {
