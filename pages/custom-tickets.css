@@ -1,0 +1,217 @@
+* {     
+    margin: 0;
+    padding: 0;   
+    box-sizing: border-box;     
+    }
+    
+    body {
+    font-family: sans-serif;
+    }
+    
+    h1 {font-size: 3.5em;}
+    h2{font-size: 2.7em;}
+    h3{font-size: 2em;}
+    p{font-size: 1em;}
+    ul{list-style: none;}
+    
+    a {
+        text-decoration: none !important;
+    }
+    
+    nav {
+        background-color: rgb(78, 78, 78) !important;
+        display: flex !important;
+        z-index: 9999;
+        /*position: fixed !important; */
+        width: 100%;
+    }
+    .container-fluid {
+        display: flex ;
+        justify-content: space-between; 
+    }
+    .mi-logo {
+        width: 30%;
+    }
+    
+    .mi-icono-inicio {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .mi-logo img {
+        width: 15vh;
+    }
+    
+    a h2 {
+        color: white;
+    }
+    
+    .mi-nav-bar {
+        display: flex;
+        margin-left: 200px;
+    }
+    
+    .mi-nav-bar a {
+        color: rgb(199, 199, 199);
+        padding: 10px;
+        font-size: 1.2rem;
+    }
+    
+    .mi-nav-bar a:hover {
+        color: white;
+    }
+    
+    #tickets {
+        color: #23ab4e;
+    }
+    
+    #tickets:hover {
+        color: #44ed7c;
+    }
+    
+    @media screen and (max-width:1450px) {
+        .mi-nav-bar {
+            margin-left: 50px;
+        }
+        .mi-nav-link{
+            font-size: 0.8rem;
+        }
+    }
+    
+    @media screen and (max-width:1450px) {
+        .mi-nav-bar {
+            margin-left: 50px;
+        }
+        .mi-nav-link{
+            font-size: 0.8rem;
+        }
+    }
+    
+    @media screen and (max-width:1237px) {
+        .mi-nav-bar {
+            margin-left: 0px;
+        }
+        .mi-nav-link{
+            font-size: 0.4rem;
+        }
+    }
+    
+    @media screen and (max-width:1199px) {
+        .mi-nav-bar, .mi-logo {
+            width: 100% !important;
+            flex-direction: column !important;
+            justify-content: flex-start !important;
+            align-items: flex-start !important;
+        }
+        .mi-hamburguesa {
+            position: fixed;
+            top: 2%;
+        }
+    }
+    
+.opciones {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-body {
+   text-align: center;
+}
+
+
+
+/*
+.formulario {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}    
+    
+.form-nombre-apellido {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}  
+.form-nombre-apellido  input {
+    display: inline-block;
+    width: 50%; 
+}
+*/
+
+footer {  
+    display: flex;
+    background-color: #1c4156;
+    align-items: center;
+    justify-content: center;
+    padding: 25px; 
+}
+    
+.mi-nav-foot {
+    align-items: center;
+    justify-content: space-around; 
+}
+    
+.mi-nav-foot a {
+    color: rgb(144, 144, 144);
+    font-size: 1.2rem;
+    padding: 20px
+}
+    
+.mi-nav-foot a:hover {
+    color: white;
+    transition: 0.3s ease-in;
+}
+    
+/* Estilos para pantallas grandes */
+@media only screen and (min-width: 1024px) {
+    .mi-nav-foot {
+        display: flex;
+        justify-content: center;
+    }
+    .mi-footer-link {
+        margin-right: 20px;
+    }
+}
+    
+/* Estilos para pantallas medianas */
+@media only screen and (max-width: 1023px) and (min-width: 768px) {
+    .mi-nav-foot {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .mi-footer-link {
+        margin-right: 20px;
+        margin-bottom: 10px;
+    }
+}
+    
+@media only screen and (max-width: 767px) {
+    .mi-nav-foot {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        justify-content: start;
+    }
+    .mi-footer-link {
+        margin-right: 15px;
+        margin-bottom: 1px;
+    }
+}
+
+/* Estilos para pantallas pequeñas */
+@media only screen and (max-width: 560px) {
+    .mi-nav-foot {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+    .mi-footer-link {
+        flex-basis: 100%;
+    }
+}
+    

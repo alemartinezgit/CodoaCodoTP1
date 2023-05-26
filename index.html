@@ -16,6 +16,8 @@
 
 <body>
 
+    <script src="./index.js"></script>
+
     <nav class="navbar navbar-expand-xl">
         <div class="container-fluid">
             <div class="mi-logo">
@@ -34,7 +36,7 @@
                 <a class="nav-link" href="#lugar">El lugar y la fecha</a>
                 <a class="nav-link active" aria-current="page" href="#ser-orador">Conviértete en orador</a>
                 <a class="nav-link" href="#oradores">Los oradores</a>
-                <a class="nav-link active" aria-current="page" href="#" id="tickets">Comprar tickets</a>                   
+                <a class="nav-link active" aria-current="page" href="./pages/comprar-tickets.html" id="tickets">Comprar tickets</a>                   
             </div>
         </div>
     </nav>      
@@ -47,8 +49,8 @@
                 experiencia de los expertos que estan creando el futuro de Internet. Ven a conocer a miembos del evento,
                 a otros estudiantes de Codo a Codo y los oradores de primer nivel que tenemos para ti. Te esperamos!</p>
             <div class="mis-botones">
-                <button type="button" class="boton" id="boton-1">Quiero ser orador</button>
-                <button type="button" class="boton" id="boton-2">Comprar tickets</button>
+                <button type="button" class="boton" id="boton-1" onclick="irOradores()">Quiero ser orador</button>
+                <button type="button" class="boton" id="boton-2" onclick="irCompraTickets()">Comprar tickets</button>
             </div>
         </div>
     </div>
