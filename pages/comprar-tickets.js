@@ -1,22 +1,15 @@
 function calcular() {
     
     const precioTicket = 200;
-    var cant;
-    var categoria;
+    var cant=parseInt(document.getElementById("cantidad").value);
+    var categoria=document.getElementById("categoria").value;
     var precioTotal;
     var precioDescuento;
     var cadena = "Total a Pagar: ";
 
-    cant=parseInt(document.getElementById("cantidad").value);
-    categoria=document.getElementById("categoria").value;
-
     if(validoCampos()){
         if (cant < 1 || isNaN(cant)) {
-            Swal.fire({
-                icon: 'error',
-                title: 'Oops...',
-                text: cant +' no es una cantidad valida de tickets!!!',
-              });
+            mensajeError1();
         } else {
             precioTotal = cant * precioTicket;
             switch(categoria) {
@@ -31,22 +24,13 @@ function calcular() {
                     break;
             }
             document.getElementById("total").value = cadena + precioDescuento ;
-            Swal.fire({
-                icon: 'success',
-                title: '¡Éxito!',
-                text: 'Se realizo con exito la compra de entradas: '+cant + ' con Importe: $' + precioDescuento ,
-              });
+                printCompra(cant,precioDescuento);
         }
     }  
     else {
-        Swal.fire({
-            icon: 'error',
-            title: 'Oops...',
-            text: 'VALIDE CAMPOS!',
-          })
+        mensajeError2();
     }
     document.getElementById("cantidad").value = "";
-    
 }
 
 function validoCampos() {
@@ -63,4 +47,48 @@ function validoCampos() {
         return false;
     }
     return true;
+}
+
+function mensajeError1 () {
+    Swal.fire({
+        icon: 'error',
+        title: 'Oops...',
+        text: 'Inserte cantidad valida de tickets!!!',
+    });
+}
+
+function mensajeError2 () {
+    Swal.fire({
+        icon: 'error',
+        title: 'Oops...',
+        text: 'VALIDE CAMPOS!',
+    });
+}
+
+function printCompra(cant,precioDescuento) {
+
+    Swal.fire({
+        title: 'Realizar compra?',
+        text: "Estas a punto de comprar " + cant + " entrada/s por: " + precioDescuento+"$",
+        icon: 'warning',
+        showCancelButton: true,
+        confirmButtonColor: '#008000',
+        cancelButtonColor: '#d33',
+        confirmButtonText: 'Confirmar Compra'
+        }).then((result) => {
+        if (result.isConfirmed) {
+            Swal.fire(
+            'Exito!!!',
+            'Se realizo con exito la compra de ' + cant + " entrada/s. IMPORTE: $" + precioDescuento,
+            'success'
+            )
+        } else {
+            Swal.fire({
+            icon: 'error',
+            title: 'Compra cancelada',
+            showConfirmButton: false,
+            timer: 1500
+            })
+        }
+    })
 }
